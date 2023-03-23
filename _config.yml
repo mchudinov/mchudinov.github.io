@@ -5,4 +5,5 @@
 # google_analytics:
 # theme: jekyll-theme-minimal
 remote_theme: pages-themes/leap-day
-# remote_theme: pages-themes/leap-day
+# remote_theme:  mmistakes/minimal-mistakes
+
