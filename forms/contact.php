@@ -6,7 +6,6 @@
   * For more info and help: https://bootstrapmade.com/php-email-form/
   */
 
-  // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'michael@chudinov.net';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
@@ -24,12 +23,12 @@
   $contact->subject = $_POST['subject'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  $contact->smtp = array(
-    'host' => 'mailout.one.com',
-    'username' => 'mikael@chudinov.net',
-    'password' => 'Energynew1@',
-    'port' => '587'
-  );
+  // $contact->smtp = array(
+  //   'host' => 'mailout.one.com',
+  //   'username' => 'mikael@chudinov.net',
+  //   'password' => 'xxx',
+  //   'port' => '587'
+  // );
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
